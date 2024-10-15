@@ -26,23 +26,23 @@ no.addEventListener('click', function(){
     heading.innerText="You are Right you are not cute!!!!!"
     no.remove();
     yes.remove();
-    let delayInMilliseconds = 5000;
+    let delayInMilliseconds = 1000;
     setTimeout(function() {
         heading.innerHTML = "Wait for sometime";
       }, delayInMilliseconds);
-    delayInMilliseconds = 5000;
+    delayInMilliseconds = 2000;
     setTimeout(function() {
         document.getElementById('counting').innerText="1"
       }, delayInMilliseconds);
-      delayInMilliseconds = 8000;
+      delayInMilliseconds = 4000;
       setTimeout(function() {
         document.getElementById('counting').innerText="2"
       }, delayInMilliseconds);
-      delayInMilliseconds = 11000;
+      delayInMilliseconds = 6000;
       setTimeout(function() {
         document.getElementById('counting').innerText="3"
       }, delayInMilliseconds);
-      delayInMilliseconds = 13000;
+      delayInMilliseconds = 8000;
       setTimeout(function() {
       document.getElementById('counting').remove();
       heading.innerText="You are the cutest my Bubu!!!!!"
