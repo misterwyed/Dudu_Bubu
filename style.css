@@ -1,3 +1,110 @@
-body{
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background for a soft look */
+    color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full-screen height */
+}
+
+/* Responsive container for the image */
+#container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+#image {
+    width: 100%;
+    max-width: 400px; /* Limit image width on large screens */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Add smooth zoom-in effect */
+}
+
+/* Image hover effect */
+#image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Heading style */
+#heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff69b4; /* A playful pink */
+    text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.7);
+}
+
+/* Container for buttons */
+#controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Buttons styling */
+button {
+    background-color: #ff69b4; /* Same playful pink as the heading */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+/* Button hover and active effects */
+button:hover {
+    background-color: #ff85c1;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #ff57a0;
+}
+
+/* Counting heading style */
+#counting {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    #heading {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #image {
+        max-width: 80%;
+    }
+}
+
+/* Responsive design for tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+    #heading {
+        font-size: 2.2rem;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
 }
